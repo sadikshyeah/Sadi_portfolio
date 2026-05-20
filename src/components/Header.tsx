@@ -32,7 +32,7 @@ export function Header() {
     <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
       <div className="header__inner">
         <a href="#" className="header__logo" onClick={closeMenu}>
-          {portfolio.name}
+          {portfolio.shortName}
           <span className="header__logo-dot" aria-hidden="true" />
         </a>
 
