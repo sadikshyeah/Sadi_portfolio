@@ -5,10 +5,10 @@ export function Projects() {
     <section className="section" id="projects">
       <div className="container">
         <p className="eyebrow">Work</p>
-        <h2 className="section__title">Selected projects</h2>
+        <h2 className="section__title">Projects I&apos;ve built</h2>
         <p className="section__subtitle">
-          A few things I&apos;ve built — swap these with your real projects in{' '}
-          <code>src/data/portfolio.ts</code>.
+          Coursework and a team project from my studies at Haaga-Helia — backend,
+          frontend, and collaborative Scrum delivery.
         </p>
         <div className="projects__grid">
           {portfolio.projects.map((project, index) => (
@@ -16,6 +16,7 @@ export function Projects() {
               <span className="project-card__index">
                 {String(index + 1).padStart(2, '0')}
               </span>
+              <p className="project-card__context">{project.context}</p>
               <h3 className="project-card__title">{project.title}</h3>
               <p className="project-card__desc">{project.description}</p>
               <ul className="project-card__tags">
@@ -25,11 +26,13 @@ export function Projects() {
               </ul>
               <div className="project-card__links">
                 <a href={project.link} target="_blank" rel="noreferrer">
-                  Live demo →
+                  Live site →
                 </a>
-                <a href={project.github} target="_blank" rel="noreferrer">
-                  Source
-                </a>
+                {project.github ? (
+                  <a href={project.github} target="_blank" rel="noreferrer">
+                    Source code
+                  </a>
+                ) : null}
               </div>
             </article>
           ))}
