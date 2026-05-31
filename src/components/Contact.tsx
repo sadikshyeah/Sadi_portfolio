@@ -6,11 +6,11 @@ export function Contact() {
       <div className="container contact__inner">
         <p className="eyebrow">Contact</p>
         <h2 className="section__title contact__title">
-          Looking for an internship?
+    
         </h2>
         <p className="contact__text">
-          I&apos;d love to connect about internship opportunities, collaborations, or
-          just to say hello. Reach out on LinkedIn or browse my code on GitHub.
+          I&apos;d love to connect about internship opportunities.
+           Reach out on LinkedIn or browse my code on GitHub.
         </p>
         <a
           href={portfolio.social.linkedin}
