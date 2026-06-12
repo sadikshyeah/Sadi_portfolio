@@ -10,7 +10,7 @@ export function Contact() {
         </h2>
         <p className="contact__text">
           I&apos;d love to connect about internship opportunities.
-           Reach out on LinkedIn or browse my code on GitHub.
+           Please reach out on LinkedIn or browse my code on GitHub.
         </p>
         <a
           href={portfolio.social.linkedin}
