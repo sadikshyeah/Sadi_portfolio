@@ -1,14 +1,14 @@
 /* Design tokens */
 :root {
-  --bg: #0c0b0f;
-  --bg-alt: #121018;
-  --surface: #1a1822;
-  --border: rgba(255, 255, 255, 0.08);
-  --text: #a8a3b3;
-  --text-strong: #f4f0fa;
-  --accent: #e8a87c;
-  --accent-dim: rgba(232, 168, 124, 0.15);
-  --accent-glow: rgba(232, 168, 124, 0.35);
+  --bg: #140e12;
+  --bg-alt: #1b1218;
+  --surface: #261a22;
+  --border: rgba(255, 192, 210, 0.12);
+  --text: #c9a8b8;
+  --text-strong: #fef1f7;
+  --accent: #f472b6;
+  --accent-dim: rgba(244, 114, 182, 0.18);
+  --accent-glow: rgba(244, 114, 182, 0.4);
   --serif: 'Instrument Serif', Georgia, serif;
   --sans: 'DM Sans', system-ui, sans-serif;
   --container: min(1120px, calc(100% - 3rem));
@@ -96,7 +96,7 @@ code {
 
 .btn--primary {
   background: var(--accent);
-  color: #1a1208;
+  color: #2a0f1c;
 }
 
 .btn--primary:hover {
@@ -125,7 +125,7 @@ code {
 }
 
 .header--scrolled {
-  background: rgba(12, 11, 15, 0.85);
+  background: rgba(20, 14, 18, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -255,7 +255,7 @@ code {
   background: var(--surface);
   box-shadow:
     0 24px 48px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(232, 168, 124, 0.12);
+    0 0 0 1px rgba(244, 114, 182, 0.12);
 }
 
 .profile-photo::before {
@@ -486,7 +486,7 @@ code {
 }
 
 .project-card:hover {
-  border-color: rgba(232, 168, 124, 0.4);
+  border-color: rgba(244, 114, 182, 0.4);
   transform: translateY(-4px);
 }
 
