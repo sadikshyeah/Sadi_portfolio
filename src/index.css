@@ -94,12 +94,13 @@ code {
   transition: var(--transition);
 }
 
-.btn--primary {
+.btn.btn--primary {
   background: var(--accent);
   color: #ffffff;
+  font-weight: 600;
 }
 
-.btn--primary:hover {
+.btn.btn--primary:hover {
   filter: brightness(1.08);
   box-shadow: 0 0 32px var(--accent-glow);
 }
@@ -166,13 +167,13 @@ code {
   gap: 1.75rem;
 }
 
-.header__nav a {
+.header__nav ul a {
   font-size: 0.9rem;
   color: var(--text);
   transition: color var(--transition);
 }
 
-.header__nav a:hover {
+.header__nav ul a:hover {
   color: var(--text-strong);
 }
 
@@ -702,7 +703,7 @@ code {
     gap: 1.5rem;
   }
 
-  .header__nav a {
+  .header__nav ul a {
     font-size: 1.25rem;
     color: var(--text-strong);
   }
