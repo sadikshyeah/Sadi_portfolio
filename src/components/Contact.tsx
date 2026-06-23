@@ -6,7 +6,7 @@ export function Contact() {
       <div className="container contact__inner">
         <p className="eyebrow">Contact</p>
         <h2 className="section__title contact__title">
-    
+          Let&apos;s connect
         </h2>
         <p className="contact__text">
           I&apos;d love to connect about internship opportunities.

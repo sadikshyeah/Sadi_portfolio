@@ -6,12 +6,12 @@ export const portfolio = {
   profilePhoto,
   profilePhotoAlt: 'Professional headshot of Sadi Parajuli',
   tagline:
-    'Final-year IT student building full-stack apps — open to internship opportunities',
+    'Final-year IT student building full-stack apps, open to internship opportunities',
   role: 'Information Technology Student',
   location: 'Helsinki, Finland · Haaga-Helia',
   school: 'Haaga-Helia University of Applied Sciences',
   degree: 'Bachelor of Information Technology (final year)',
-  about: `I'm Sadi Parajuli, a final-year Information Technology student at Haaga-Helia in Helsinki. I enjoy building reliable backend services and clean, responsive frontends — from Spring Boot APIs with PostgreSQL to React + TypeScript UIs.
+  about: `I'm Sadi Parajuli, a final-year Information Technology student at Haaga-Helia in Helsinki. I enjoy building reliable backend services and clean, responsive frontends, from Spring Boot APIs with PostgreSQL to React + TypeScript UIs.
 
 I've shipped course projects and a Scrum-based team app, and I'm actively looking for internship opportunities where I can learn, contribute, and grow as a developer.`,
   social: {
@@ -78,7 +78,7 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
       title: 'Full-stack & team projects',
       company: 'Haaga-Helia',
       description:
-        'Built Sadiverse (Spring Boot backend focus), Personal Trainer (React frontend), and Quizzer UI (group Scrum project) — see Projects for details and live demos.',
+        'Built Sadiverse (Spring Boot backend focus), Personal Trainer (React frontend), and Quizzer UI (group Scrum project), see Projects for details and live demos.',
     },
   ],
   highlights: [
