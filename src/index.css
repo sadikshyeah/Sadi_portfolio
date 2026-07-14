@@ -476,14 +476,52 @@ code {
 }
 
 .project-card {
-  padding: 2rem;
   border-radius: var(--radius);
   background: var(--surface);
   border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  overflow: hidden;
   transition: var(--transition);
+}
+
+.project-card__gallery {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 0.75rem 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+.project-card__gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.project-card__gallery::-webkit-scrollbar-thumb {
+  background: var(--accent-dim);
+  border-radius: 999px;
+}
+
+.project-card__image {
+  flex: 0 0 88%;
+  width: 88%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+  scroll-snap-align: start;
+  background: var(--bg-alt);
+}
+
+.project-card__body {
+  padding: 1.5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
 }
 
 .project-card:hover {
