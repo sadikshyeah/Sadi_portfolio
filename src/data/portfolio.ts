@@ -1,4 +1,15 @@
 import profilePhoto from '../assets/profile.png'
+import sadiverseWelcome from '../assets/sadiverse-welcome.png'
+import sadiverseLearn from '../assets/sadiverse-learn.png'
+import sadiverseAdmin from '../assets/sadiverse-admin.png'
+import sadiverseEdit from '../assets/sadiverse-edit.png'
+import personalTrainerDashboard from '../assets/personal-trainer-dashboard.png'
+import personalTrainerCustomers from '../assets/personal-trainer-customers.png'
+import personalTrainerStats from '../assets/personal-trainer-stats.png'
+import quizzerQuizzes from '../assets/quizzer-quizzes.png'
+import quizzerCreateQuiz from '../assets/quizzer-create-quiz.png'
+import quizzerCategories from '../assets/quizzer-categories.png'
+import quizzerAddCategory from '../assets/quizzer-add-category.png'
 
 export const portfolio = {
   name: 'Sadi Parajuli',
@@ -45,6 +56,24 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
       ],
       link: 'https://sadiverse.com/login',
       github: null,
+      images: [
+        {
+          src: sadiverseWelcome,
+          alt: 'Sadiverse welcome screen with Finnish level selection',
+        },
+        {
+          src: sadiverseLearn,
+          alt: 'Sadiverse vocabulary learning view with Finnish word and example',
+        },
+        {
+          src: sadiverseAdmin,
+          alt: 'Sadiverse admin word list with edit and delete actions',
+        },
+        {
+          src: sadiverseEdit,
+          alt: 'Sadiverse admin edit word form',
+        },
+      ],
     },
     {
       title: 'Personal Trainer',
@@ -54,6 +83,20 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
       tags: ['React', 'TypeScript', 'Vite', 'Calendar', 'Dashboard'],
       link: 'https://personal-trainer-vercel-fawn.vercel.app/',
       github: null,
+      images: [
+        {
+          src: personalTrainerDashboard,
+          alt: 'Personal Trainer dashboard with daily motivation and key metrics',
+        },
+        {
+          src: personalTrainerCustomers,
+          alt: 'Personal Trainer customer list with add customer form',
+        },
+        {
+          src: personalTrainerStats,
+          alt: 'Personal Trainer dashboard with customer and training statistics',
+        },
+      ],
     },
     {
       title: 'Quizzer UI',
@@ -63,6 +106,24 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
       tags: ['React', 'TypeScript', 'REST API', 'Scrum', 'Render'],
       link: 'https://quizzer-ui.onrender.com/',
       github: 'https://github.com/The-Five-Stack/quizzer-ui',
+      images: [
+        {
+          src: quizzerQuizzes,
+          alt: 'Quizzer quiz management dashboard with published and draft quizzes',
+        },
+        {
+          src: quizzerCreateQuiz,
+          alt: 'Quizzer create quiz form with course code and category',
+        },
+        {
+          src: quizzerCategories,
+          alt: 'Quizzer category management table',
+        },
+        {
+          src: quizzerAddCategory,
+          alt: 'Quizzer add category form',
+        },
+      ],
     },
   ],
   experience: [
