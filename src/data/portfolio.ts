@@ -26,6 +26,7 @@ export const portfolio = {
 
 I've shipped course projects and a Scrum-based team app, and I'm actively looking for internship opportunities where I can learn, contribute, and grow as a developer.`,
   social: {
+    email: 'Sadikshyeah@gmail.com',
     github: 'https://github.com/sadikshyeah',
     linkedin: 'https://www.linkedin.com/in/sadi-parajuli-96a6a125a/',
   },
