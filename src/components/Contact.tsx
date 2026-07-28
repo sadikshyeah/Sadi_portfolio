@@ -10,15 +10,13 @@ export function Contact() {
         </h2>
         <p className="contact__text">
           I&apos;d love to connect about internship opportunities.
-           Please reach out on LinkedIn or browse my code on GitHub.
+          Email me, reach out on LinkedIn, or browse my code on GitHub.
         </p>
         <a
-          href={portfolio.social.linkedin}
-          target="_blank"
-          rel="noreferrer"
+          href={`mailto:${portfolio.social.email}`}
           className="contact__email"
         >
-          Connect on LinkedIn
+          {portfolio.social.email}
         </a>
         <div className="contact__social">
           <a href={portfolio.social.github} target="_blank" rel="noreferrer">
