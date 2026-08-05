@@ -19,6 +19,9 @@ export function Contact() {
           {portfolio.social.email}
         </a>
         <div className="contact__social">
+          <a href={portfolio.resume} download>
+            Download CV
+          </a>
           <a href={portfolio.social.github} target="_blank" rel="noreferrer">
             GitHub — @sadikshyeah
           </a>
