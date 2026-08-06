@@ -16,6 +16,13 @@ export function Hero() {
             <a href="#projects" className="btn btn--primary">
               View my work
             </a>
+            <a
+              href={portfolio.resume}
+              className="btn btn--ghost"
+              download
+            >
+              Download CV
+            </a>
             <a href="#contact" className="btn btn--ghost">
               Contact me
             </a>
