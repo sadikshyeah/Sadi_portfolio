@@ -30,6 +30,7 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
     github: 'https://github.com/sadikshyeah',
     linkedin: 'https://www.linkedin.com/in/sadi-parajuli-96a6a125a/',
   },
+  resume: '/Sadi-Parajuli-CV.pdf',
   skills: [
     'Java & Spring Boot',
     'Spring Security & JPA',
