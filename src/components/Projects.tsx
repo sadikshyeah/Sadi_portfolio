@@ -1,4 +1,5 @@
 import { portfolio } from '../data/portfolio'
+import { ProjectGallery } from './ProjectGallery'
 
 export function Projects() {
   return (
@@ -14,17 +15,7 @@ export function Projects() {
           {portfolio.projects.map((project, index) => (
             <article key={project.title} className="project-card">
               {'images' in project && project.images?.length ? (
-                <div className="project-card__gallery" aria-label={`${project.title} screenshots`}>
-                  {project.images.map((image) => (
-                    <img
-                      key={image.alt}
-                      src={image.src}
-                      alt={image.alt}
-                      className="project-card__image"
-                      loading="lazy"
-                    />
-                  ))}
-                </div>
+                <ProjectGallery title={project.title} images={project.images} />
               ) : null}
               <div className="project-card__body">
                 <span className="project-card__index">
