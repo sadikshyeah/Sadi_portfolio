@@ -240,11 +240,13 @@ code {
 .hero__content {
   position: relative;
   z-index: 1;
+  animation: hero-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .hero__profile {
   display: flex;
   justify-content: center;
+  animation: hero-enter 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
 }
 
 /* Profile photo */
@@ -360,6 +362,77 @@ code {
   50% {
     opacity: 1;
     transform: scaleX(1);
+  }
+}
+
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(1.1rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Scroll reveal */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(1.35rem);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+[data-reveal].is-revealed .skill-card,
+[data-reveal].is-revealed .project-card,
+[data-reveal].is-revealed .timeline__item,
+[data-reveal].is-revealed .stat {
+  animation: reveal-rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+[data-reveal].is-revealed .skill-card:nth-child(2),
+[data-reveal].is-revealed .project-card:nth-child(2),
+[data-reveal].is-revealed .timeline__item:nth-child(2),
+[data-reveal].is-revealed .stat:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+[data-reveal].is-revealed .skill-card:nth-child(3),
+[data-reveal].is-revealed .project-card:nth-child(3),
+[data-reveal].is-revealed .timeline__item:nth-child(3),
+[data-reveal].is-revealed .stat:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+[data-reveal].is-revealed .skill-card:nth-child(4),
+[data-reveal].is-revealed .stat:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+[data-reveal].is-revealed .skill-card:nth-child(5) {
+  animation-delay: 0.3s;
+}
+
+[data-reveal].is-revealed .skill-card:nth-child(6) {
+  animation-delay: 0.36s;
+}
+
+@keyframes reveal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.85rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -892,5 +965,17 @@ code {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .hero__content,
+  .hero__profile,
+  [data-reveal],
+  [data-reveal].is-revealed .skill-card,
+  [data-reveal].is-revealed .project-card,
+  [data-reveal].is-revealed .timeline__item,
+  [data-reveal].is-revealed .stat {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
   }
 }
