@@ -2,7 +2,7 @@ import { portfolio } from '../data/portfolio'
 
 export function Contact() {
   return (
-    <section className="section contact" id="contact">
+    <section className="section contact" id="contact" data-reveal>
       <div className="container contact__inner">
         <p className="eyebrow">Contact</p>
         <h2 className="section__title contact__title">

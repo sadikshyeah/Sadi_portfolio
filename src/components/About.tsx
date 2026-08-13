@@ -2,7 +2,7 @@ import { portfolio } from '../data/portfolio'
 
 export function About() {
   return (
-    <section className="section" id="about">
+    <section className="section" id="about" data-reveal>
       <div className="container section__grid section__grid--about">
         <div className="section__label-col about__aside">
           <div className="profile-photo profile-photo--about">
