@@ -3,7 +3,7 @@ import { ProjectGallery } from './ProjectGallery'
 
 export function Projects() {
   return (
-    <section className="section" id="projects">
+    <section className="section" id="projects" data-reveal>
       <div className="container">
         <p className="eyebrow">Work</p>
         <h2 className="section__title">Projects I&apos;ve built</h2>
