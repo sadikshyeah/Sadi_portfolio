@@ -2,7 +2,7 @@ import { portfolio } from '../data/portfolio'
 
 export function Skills() {
   return (
-    <section className="section section--alt" id="skills">
+    <section className="section section--alt" id="skills" data-reveal>
       <div className="container">
         <p className="eyebrow">Skills</p>
         <h2 className="section__title section__title--center">
