@@ -130,11 +130,18 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
   ],
   experience: [
     {
-      period: '2022 — Present',
+      period: 'June 2026 — Present',
+      title: 'Software Engineer Intern',
+      company: 'Okhati · Remote',
+      description:
+        'Building features for Okhati’s healthcare clinic management platform. Implemented real-time voice-to-text with Speechmatics for live consultation transcripts, and integrated the OpenAI API to turn transcripts into clinical summaries. Contributed to React frontend and backend work with a distributed team across Nepal and Finland (Bitbucket, Jira).',
+    },
+    {
+      period: '2024 — Present',
       title: 'Bachelor of Information Technology',
       company: 'Haaga-Helia University of Applied Sciences',
       description:
-        'Final-year student in Helsinki, studying software development, databases, backend and frontend technologies, and agile team delivery.',
+        'Studying software development in Helsinki since 2024 — databases, backend and frontend technologies, and agile team delivery. Expected graduation 2027.',
     },
     {
       period: 'Coursework',
