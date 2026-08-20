@@ -23,9 +23,6 @@ export function Hero() {
             >
               Download CV
             </a>
-            <a href="#contact" className="btn btn--ghost">
-              Contact me
-            </a>
           </div>
           <div className="hero__scroll" aria-hidden="true">
             <span>Scroll</span>
