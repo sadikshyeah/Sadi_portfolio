@@ -8,13 +8,20 @@ export function Skills() {
         <h2 className="section__title section__title--center">
           Tools & technologies I work with
         </h2>
-        <ul className="skills__grid">
-          {portfolio.skills.map((skill) => (
-            <li key={skill} className="skill-card">
-              {skill}
-            </li>
+        <div className="skills__categories">
+          {portfolio.skillCategories.map((category) => (
+            <div key={category.title} className="skills__category">
+              <h3 className="skills__category-title">{category.title}</h3>
+              <ul className="skills__grid">
+                {category.skills.map((skill) => (
+                  <li key={skill} className="skill-card">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   )
