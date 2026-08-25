@@ -531,10 +531,24 @@ code {
 }
 
 /* Skills */
-.skills__grid {
+.skills__categories {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skills__category-title {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--text-strong);
+  margin: 0 0 1rem;
+}
+
+.skills__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .skill-card {
@@ -935,6 +949,11 @@ code {
 
   .about__stats {
     grid-template-columns: 1fr;
+  }
+
+  .skills__categories {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 
   .hero__layout {
