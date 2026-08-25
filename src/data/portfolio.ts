@@ -31,17 +31,25 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
     linkedin: 'https://www.linkedin.com/in/sadi-parajuli-96a6a125a/',
   },
   resume: `${import.meta.env.BASE_URL}Sadi-Parajuli-CV.pdf`,
-  skills: [
-    'Java & Spring Boot',
-    'Spring Security & JPA',
-    'PostgreSQL',
-    'React & TypeScript',
-    'REST APIs',
-    'Thymeleaf',
-    'HTML & CSS',
-    'Git & GitHub',
-    'Scrum & Team Projects',
-    'Vercel & Render',
+  skillCategories: [
+    {
+      title: 'Backend',
+      skills: [
+        'Java & Spring Boot',
+        'Spring Security & JPA',
+        'PostgreSQL',
+        'REST APIs',
+        'Thymeleaf',
+      ],
+    },
+    {
+      title: 'Frontend',
+      skills: ['React & TypeScript', 'HTML & CSS'],
+    },
+    {
+      title: 'Tools',
+      skills: ['Git & GitHub', 'Scrum & Team Projects', 'Vercel & Render'],
+    },
   ],
   projects: [
     {
