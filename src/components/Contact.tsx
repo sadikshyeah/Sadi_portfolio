@@ -1,6 +1,20 @@
+import { useState } from 'react'
 import { portfolio } from '../data/portfolio'
 
 export function Contact() {
+  const [copied, setCopied] = useState(false)
+  const email = portfolio.social.email
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 2000)
+    } catch {
+      setCopied(false)
+    }
+  }
+
   return (
     <section className="section contact" id="contact" data-reveal>
       <div className="container contact__inner">
@@ -12,12 +26,21 @@ export function Contact() {
           I&apos;d love to connect about internship opportunities.
           Email me, reach out on LinkedIn, or browse my code on GitHub.
         </p>
-        <a
-          href={`mailto:${portfolio.social.email}`}
-          className="contact__email"
-        >
-          {portfolio.social.email}
-        </a>
+
+        <div className="contact__cta">
+          <a href={`mailto:${email}`} className="contact__email">
+            {email}
+          </a>
+          <div className="contact__actions">
+            <a href={`mailto:${email}`} className="btn btn--primary">
+              Send email
+            </a>
+            <button type="button" className="btn btn--ghost" onClick={copyEmail}>
+              {copied ? 'Copied!' : 'Copy email'}
+            </button>
+          </div>
+        </div>
+
         <div className="contact__social">
           <a href={portfolio.resume} download>
             Download CV
