@@ -14,6 +14,7 @@
   --container: min(1120px, calc(100% - 3rem));
   --radius: 12px;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --focus-ring: 0 0 0 3px rgba(236, 72, 153, 0.35);
 }
 
 *,
@@ -43,6 +44,36 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.btn.btn--primary:focus-visible {
+  outline-color: #ffffff;
+  box-shadow: var(--focus-ring);
+}
+
+.header__logo:focus-visible,
+.contact__email:focus-visible,
+.project-card__links a:focus-visible,
+.contact__social a:focus-visible,
+.footer__top:focus-visible {
+  border-radius: 6px;
+}
+
+.header__menu-btn:focus-visible,
+.project-card__nav:focus-visible,
+.project-card__dot:focus-visible {
+  outline-offset: 2px;
+}
+
+.project-card__dot:focus-visible {
+  outline-width: 2px;
+  transform: scale(1.15);
 }
 
 ul {
@@ -1017,6 +1048,10 @@ code {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .project-card__dot:focus-visible {
+    transform: none;
   }
 
   .hero__content,
