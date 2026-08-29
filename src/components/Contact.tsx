@@ -23,7 +23,7 @@ export function Contact() {
           Let&apos;s connect
         </h2>
         <p className="contact__text">
-          I&apos;d love to connect about internship opportunities.
+          Currently interning at Okhati and open to new opportunities.
           Email me, reach out on LinkedIn, or browse my code on GitHub.
         </p>
 
