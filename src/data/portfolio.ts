@@ -17,14 +17,14 @@ export const portfolio = {
   profilePhoto,
   profilePhotoAlt: 'Professional headshot of Sadi Parajuli',
   tagline:
-    'Final-year IT student building full-stack apps, open to internship opportunities',
-  role: 'Information Technology Student',
+    'Software Engineer Intern at Okhati, building full-stack apps and AI-powered healthcare features',
+  role: 'Software Engineer Intern · Okhati',
   location: 'Helsinki, Finland · Haaga-Helia',
   school: 'Haaga-Helia University of Applied Sciences',
   degree: 'Bachelor of Information Technology (final year)',
-  about: `I'm Sadi Parajuli, a final-year Information Technology student at Haaga-Helia in Helsinki. I enjoy building reliable backend services and clean, responsive frontends, from Spring Boot APIs with PostgreSQL to React + TypeScript UIs.
+  about: `I'm Sadi Parajuli, a final-year Information Technology student at Haaga-Helia in Helsinki and a Software Engineer Intern at Okhati. I enjoy building reliable backend services and clean, responsive frontends, from Spring Boot APIs with PostgreSQL to React + TypeScript UIs.
 
-I've shipped course projects and a Scrum-based team app, and I'm actively looking for internship opportunities where I can learn, contribute, and grow as a developer.`,
+At Okhati I'm working on real-time voice-to-text and AI clinical summaries for healthcare teams. I've also shipped course projects and a Scrum-based team app, and I'm open to new opportunities where I can keep learning and growing as a developer.`,
   social: {
     email: 'Sadikshyeah@gmail.com',
     github: 'https://github.com/sadikshyeah',
@@ -160,8 +160,8 @@ I've shipped course projects and a Scrum-based team app, and I'm actively lookin
     },
   ],
   highlights: [
+    { value: 'Intern', label: 'At Okhati' },
     { value: 'Final year', label: 'At Haaga-Helia' },
     { value: '3', label: 'Shipped projects' },
-    { value: 'Open', label: 'To internships' },
   ],
 } as const
