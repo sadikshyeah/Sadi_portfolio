@@ -47,8 +47,17 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
       skills: ['React & TypeScript', 'HTML & CSS'],
     },
     {
+      title: 'AI & Speech',
+      skills: ['Speechmatics', 'OpenAI API'],
+    },
+    {
       title: 'Tools',
-      skills: ['Git & GitHub', 'Scrum & Team Projects', 'Vercel & Render'],
+      skills: [
+        'Git & GitHub',
+        'Bitbucket & Jira',
+        'Scrum & Team Projects',
+        'Vercel & Render',
+      ],
     },
   ],
   projects: [
