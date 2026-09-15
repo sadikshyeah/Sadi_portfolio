@@ -4,6 +4,7 @@ export function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero__glow" aria-hidden="true" />
+      <div className="hero__glow hero__glow--secondary" aria-hidden="true" />
       <div className="container hero__layout">
         <div className="hero__content">
           <p className="eyebrow">{portfolio.role}</p>
