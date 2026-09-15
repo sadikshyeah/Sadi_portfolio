@@ -33,7 +33,10 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(244, 114, 182, 0.22), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 90% 5%, rgba(236, 72, 153, 0.14), transparent 50%),
+    var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -256,6 +259,10 @@ code {
   align-items: center;
   padding: 7rem 0 4rem;
   overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(244, 114, 182, 0.28), transparent 42%),
+    radial-gradient(circle at 12% 75%, rgba(253, 164, 205, 0.35), transparent 40%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, transparent 55%);
 }
 
 .hero__glow {
@@ -267,7 +274,18 @@ code {
   aspect-ratio: 1;
   background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.75;
+}
+
+.hero__glow--secondary {
+  top: auto;
+  right: auto;
+  bottom: -25%;
+  left: -15%;
+  width: 50vw;
+  max-width: 480px;
+  opacity: 0.45;
+  background: radial-gradient(circle, rgba(253, 164, 205, 0.55) 0%, transparent 70%);
 }
 
 .hero__layout {
