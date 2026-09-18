@@ -64,6 +64,7 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
     {
       title: 'Sadiverse',
       context: 'Backend Development course',
+      featured: true,
       description:
         'A full-stack learning app focused on backend development where users practice Finnish vocabulary by level (A1–C2). Includes secure authentication, email verification, and admin tooling. Built with Spring Boot 4, Thymeleaf, Spring Security, Spring Data JPA, and PostgreSQL.',
       tags: [
