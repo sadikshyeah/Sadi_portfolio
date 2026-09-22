@@ -155,6 +155,13 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
         'Building features for Okhati’s healthcare clinic management platform. Implemented real-time voice-to-text with Speechmatics for live consultation transcripts, and integrated the OpenAI API to turn transcripts into clinical summaries. Contributed to React frontend and backend work with a distributed team across Nepal and Finland (Bitbucket, Jira).',
     },
     {
+      period: '2026',
+      title: 'Temporary Customer Service Representative',
+      company: 'Nordic Business Forum',
+      description:
+        'Guided and assisted customers in the Seminar Hall. Gained first customer service experience, developed communication and teamwork skills, and built connections with new people in a fast-paced event environment.',
+    },
+    {
       period: '2024 — Present',
       title: 'Bachelor of Information Technology',
       company: 'Haaga-Helia University of Applied Sciences',
