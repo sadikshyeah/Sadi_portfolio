@@ -151,6 +151,7 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
       period: 'June 2026 — Present',
       title: 'Software Engineer Intern',
       company: 'Okhati · Remote',
+      current: true,
       description:
         'Building features for Okhati’s healthcare clinic management platform. Implemented real-time voice-to-text with Speechmatics for live consultation transcripts, and integrated the OpenAI API to turn transcripts into clinical summaries. Contributed to React frontend and backend work with a distributed team across Nepal and Finland (Bitbucket, Jira).',
     },
