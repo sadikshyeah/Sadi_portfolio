@@ -9,14 +9,26 @@ export function Experience() {
           <h2 className="section__title">Where I&apos;ve worked</h2>
         </div>
         <ul className="timeline">
-          {portfolio.experience.map((item) => (
-            <li key={item.title} className="timeline__item">
-              <span className="timeline__period">{item.period}</span>
-              <h3 className="timeline__title">{item.title}</h3>
-              <p className="timeline__company">{item.company}</p>
-              <p className="timeline__desc">{item.description}</p>
-            </li>
-          ))}
+          {portfolio.experience.map((item) => {
+            const isCurrent = 'current' in item && item.current
+
+            return (
+              <li
+                key={item.title}
+                className={`timeline__item${isCurrent ? ' timeline__item--current' : ''}`}
+              >
+                <div className="timeline__header">
+                  <span className="timeline__period">{item.period}</span>
+                  {isCurrent ? (
+                    <span className="timeline__badge">Current</span>
+                  ) : null}
+                </div>
+                <h3 className="timeline__title">{item.title}</h3>
+                <p className="timeline__company">{item.company}</p>
+                <p className="timeline__desc">{item.description}</p>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </section>
