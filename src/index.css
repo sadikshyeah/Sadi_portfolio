@@ -868,10 +868,45 @@ code {
   background: var(--accent);
 }
 
+.timeline__item--current {
+  padding: 1.25rem 1.25rem 1.25rem 1.75rem;
+  margin-left: -0.25rem;
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.1);
+}
+
+.timeline__item--current::before {
+  left: -5px;
+  top: 1.55rem;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 0 4px var(--accent-dim);
+}
+
+.timeline__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
 .timeline__period {
   font-size: 0.8rem;
   color: var(--accent);
   font-weight: 500;
+}
+
+.timeline__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--accent);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
 }
 
 .timeline__title {
