@@ -75,7 +75,7 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
         'JPA',
       ],
       link: 'https://sadiverse.com/login',
-      github: null,
+      github: 'https://github.com/sadikshyeah/FastFinnishVocab',
       images: [
         {
           src: sadiverseWelcome,
@@ -102,7 +102,7 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
         'A React + TypeScript app for managing customers and training sessions. Manage customers and sessions (add, edit, delete), view all trainings in a calendar, see activity-based training statistics, and a dashboard with totals.',
       tags: ['React', 'TypeScript', 'Vite', 'Calendar', 'Dashboard'],
       link: 'https://personal-trainer-vercel-fawn.vercel.app/',
-      github: null,
+      github: 'https://github.com/sadikshyeah/Personal-Trainer',
       images: [
         {
           src: personalTrainerDashboard,
