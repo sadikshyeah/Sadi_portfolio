@@ -4,9 +4,9 @@
   --bg-alt: #fce7f3;
   --surface: #ffffff;
   --border: rgba(244, 114, 182, 0.22);
-  --text: #9d7185;
+  --text: #7a4d63;
   --text-strong: #4a1d35;
-  --accent: #ec4899;
+  --accent: #c4195f;
   --accent-dim: rgba(236, 72, 153, 0.12);
   --accent-glow: rgba(236, 72, 153, 0.28);
   --serif: 'Instrument Serif', Georgia, serif;
@@ -384,7 +384,6 @@ code {
 .hero__location {
   font-size: 0.9rem;
   margin: 0 0 2rem;
-  opacity: 0.8;
 }
 
 .hero__actions {
@@ -402,7 +401,6 @@ code {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text);
-  opacity: 0.6;
 }
 
 .hero__scroll-line {
@@ -714,7 +712,6 @@ code {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text);
-  opacity: 0.7;
 }
 
 .project-card__dots {
@@ -796,7 +793,6 @@ code {
   font-weight: 500;
   color: var(--text);
   margin: 0;
-  opacity: 0.85;
 }
 
 .project-card__title {
@@ -842,6 +838,75 @@ code {
 
 .project-card__links a:hover {
   color: var(--accent);
+}
+
+/* Featured professional work */
+.work-feature {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem 3rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem 2.25rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid rgba(236, 72, 153, 0.4);
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 16px 40px rgba(236, 72, 153, 0.12);
+}
+
+.work-feature__main,
+.work-feature__side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.work-feature__title {
+  font-family: var(--serif);
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--text-strong);
+  margin: 0;
+}
+
+.work-feature__outcome {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.work-feature__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-feature__list li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-strong);
+}
+
+.work-feature__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .work-feature {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
 }
 
 /* Timeline */
