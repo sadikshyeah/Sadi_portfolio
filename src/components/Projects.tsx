@@ -2,15 +2,40 @@ import { portfolio } from '../data/portfolio'
 import { ProjectGallery } from './ProjectGallery'
 
 export function Projects() {
+  const work = portfolio.professionalWork
+
   return (
     <section className="section" id="projects" data-reveal>
       <div className="container">
         <p className="eyebrow">Work</p>
         <h2 className="section__title">Projects I&apos;ve built</h2>
         <p className="section__subtitle">
-          Coursework and a team project from my studies at Haaga-Helia — backend,
-          frontend, and collaborative Scrum delivery.
+          Production work at Okhati, plus coursework and a team project from my
+          studies at Haaga-Helia.
         </p>
+        <article className="work-feature">
+          <div className="work-feature__main">
+            <div className="project-card__meta">
+              <span className="project-card__badge">Professional work</span>
+            </div>
+            <p className="project-card__context">{work.context}</p>
+            <h3 className="work-feature__title">{work.title}</h3>
+            <p className="work-feature__outcome">{work.outcome}</p>
+            <p className="project-card__desc">{work.description}</p>
+          </div>
+          <div className="work-feature__side">
+            <ul className="work-feature__list">
+              {work.highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <ul className="project-card__tags">
+              {work.tags.map((tag) => (
+                <li key={tag}>{tag}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
         <div className="projects__grid">
           {portfolio.projects.map((project, index) => {
             const isFeatured = 'featured' in project && project.featured

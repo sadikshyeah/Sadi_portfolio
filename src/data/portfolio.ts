@@ -60,11 +60,23 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
       ],
     },
   ],
+  professionalWork: {
+    title: 'Okhati clinic platform',
+    context: 'Software Engineer Intern · Remote · June 2026 — Present',
+    outcome: 'Live consultation speech → searchable transcript → AI clinical summary',
+    description:
+      'Building features for Okhati’s healthcare clinic management platform, working with a distributed team across Nepal and Finland.',
+    highlights: [
+      'Real-time voice-to-text with Speechmatics for live consultation transcripts',
+      'OpenAI API integration that turns transcripts into clinical summaries',
+      'React frontend and backend contributions, shipped through Bitbucket and Jira',
+    ],
+    tags: ['Speechmatics', 'OpenAI API', 'React', 'Bitbucket', 'Jira'],
+  },
   projects: [
     {
       title: 'Sadiverse',
       context: 'Backend Development course',
-      featured: true,
       description:
         'A full-stack learning app focused on backend development where users practice Finnish vocabulary by level (A1–C2). Includes secure authentication, email verification, and admin tooling. Built with Spring Boot 4, Thymeleaf, Spring Security, Spring Data JPA, and PostgreSQL.',
       tags: [
