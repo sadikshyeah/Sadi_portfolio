@@ -104,6 +104,26 @@ code {
   margin-inline: auto;
 }
 
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: none;
+  outline-color: #ffffff;
+  box-shadow: var(--focus-ring);
+}
+
 .eyebrow {
   font-size: 0.75rem;
   font-weight: 600;
@@ -707,6 +727,7 @@ code {
 }
 
 .project-card__hint {
+  display: none;
   margin: 0;
   font-size: 0.7rem;
   letter-spacing: 0.06em;
@@ -715,6 +736,7 @@ code {
 }
 
 .project-card__dots {
+  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -1086,6 +1108,10 @@ code {
 @media (max-width: 768px) {
   .project-card__nav {
     display: none;
+  }
+
+  .project-card__hint {
+    display: block;
   }
 
   .project-card__image {
