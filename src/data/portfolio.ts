@@ -26,7 +26,7 @@ export const portfolio = {
 
 At Okhati I'm working on real-time voice-to-text and AI clinical summaries for healthcare teams. I've also shipped course projects and a Scrum-based team app, and I'm open to new opportunities where I can keep learning and growing as a developer.`,
   social: {
-    email: 'Sadikshyeah@gmail.com',
+    email: 'sadikshyeah@gmail.com',
     github: 'https://github.com/sadikshyeah',
     linkedin: 'https://www.linkedin.com/in/sadi-parajuli-96a6a125a/',
   },
@@ -62,7 +62,7 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
   ],
   professionalWork: {
     title: 'Okhati clinic platform',
-    context: 'Software Engineer Intern · Remote · June 2026 — Present',
+    context: 'Software Developer Intern · Remote · June 2026 — Present',
     outcome: 'Live consultation speech → searchable transcript → AI clinical summary',
     description:
       'Building features for Okhati’s healthcare clinic management platform, working with a distributed team across Nepal and Finland.',
@@ -161,7 +161,7 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
   experience: [
     {
       period: 'June 2026 — Present',
-      title: 'Software Engineer Intern',
+      title: 'Software Developer Intern',
       company: 'Okhati · Remote',
       current: true,
       description:
