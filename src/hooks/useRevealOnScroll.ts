@@ -20,7 +20,7 @@ export function useRevealOnScroll() {
         })
       },
       {
-        threshold: 0.16,
+        threshold: 0,
         rootMargin: '0px 0px -8% 0px',
       },
     )
