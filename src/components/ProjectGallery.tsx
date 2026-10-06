@@ -97,15 +97,14 @@ export function ProjectGallery({ title, images }: ProjectGalleryProps) {
 
           <div className="project-card__controls">
             <p className="project-card__hint">Swipe for more</p>
-            <div className="project-card__dots" role="tablist" aria-label={`${title} slides`}>
+            <div className="project-card__dots" role="group" aria-label={`${title} slides`}>
               {images.map((image, index) => (
                 <button
                   key={image.alt}
                   type="button"
-                  role="tab"
                   className={`project-card__dot${index === activeIndex ? ' project-card__dot--active' : ''}`}
                   aria-label={`Show screenshot ${index + 1}`}
-                  aria-selected={index === activeIndex}
+                  aria-current={index === activeIndex ? 'true' : undefined}
                   onClick={() => scrollToIndex(index)}
                 />
               ))}
