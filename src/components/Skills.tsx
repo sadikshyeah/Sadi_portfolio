@@ -5,7 +5,7 @@ export function Skills() {
     <section className="section section--alt" id="skills" data-reveal>
       <div className="container">
         <p className="eyebrow">Skills</p>
-        <h2 className="section__title section__title--center">
+        <h2 className="section__title section__title--spaced">
           Tools & technologies I work with
         </h2>
         <div className="skills__categories">
