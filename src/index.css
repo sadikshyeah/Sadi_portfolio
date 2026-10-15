@@ -1013,6 +1013,18 @@ code {
   margin: 0;
 }
 
+.timeline__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.timeline__link:hover {
+  text-decoration: underline;
+}
+
 /* Contact */
 .contact {
   text-align: center;
