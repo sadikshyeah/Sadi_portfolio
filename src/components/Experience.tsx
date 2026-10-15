@@ -26,6 +26,16 @@ export function Experience() {
                 <h3 className="timeline__title">{item.title}</h3>
                 <p className="timeline__company">{item.company}</p>
                 <p className="timeline__desc">{item.description}</p>
+                {'link' in item ? (
+                  <a
+                    href={item.link}
+                    className="timeline__link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {item.linkLabel} →
+                  </a>
+                ) : null}
               </li>
             )
           })}
