@@ -24,7 +24,7 @@ export const portfolio = {
   degree: 'Bachelor of Information Technology (final year)',
   about: `I'm Sadi Parajuli, a final-year Information Technology student at Haaga-Helia in Helsinki and a Software Developer Intern at Okhati. I enjoy building reliable backend services and clean, responsive frontends, from Spring Boot APIs with PostgreSQL to React + TypeScript UIs.
 
-At Okhati I'm working on real-time voice-to-text and AI clinical summaries for healthcare teams. I've also shipped course projects and a Scrum-based team app, and I'm open to new opportunities where I can keep learning and growing as a developer.`,
+At Okhati I'm working on real-time voice-to-text and AI clinical summaries for healthcare teams, and I contribute to FISMA's open-source Benefit app. I've also shipped course projects and a Scrum-based team app, and I'm open to new opportunities where I can keep learning and growing as a developer.`,
   social: {
     email: 'sadikshyeah@gmail.com',
     github: 'https://github.com/sadikshyeah',
@@ -166,6 +166,16 @@ At Okhati I'm working on real-time voice-to-text and AI clinical summaries for h
       current: true,
       description:
         'Building features for Okhati’s healthcare clinic management platform. Implemented real-time voice-to-text with Speechmatics for live consultation transcripts, and integrated the OpenAI API to turn transcripts into clinical summaries. Contributed to React frontend and backend work with a distributed team across Nepal and Finland (Bitbucket, Jira).',
+    },
+    {
+      period: 'September 2026 — Present',
+      title: 'Open Source Contributor',
+      company: 'FISMA · Benefit app',
+      current: true,
+      description:
+        'Contributing to Benefit, an open-source web app commissioned by FISMA (Finnish Software Measurement Association) for function point analysis of IT projects. 9 merged pull requests so far, covering PDF report generation (comments section, keep-together page layout, first-page summary), CSV export ordering, UI icons for component classes, and deployment docs. React + TypeScript frontend with a Java backend.',
+      link: 'https://github.com/fisma-benefit-app/benefit-app',
+      linkLabel: 'View on GitHub',
     },
     {
       period: '2026',
