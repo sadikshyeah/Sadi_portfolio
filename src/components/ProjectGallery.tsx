@@ -12,14 +12,24 @@ type ProjectGalleryProps = {
 
 export function ProjectGallery({ title, images }: ProjectGalleryProps) {
   const scrollerRef = useRef<HTMLDivElement>(null)
+  const dialogRef = useRef<HTMLDialogElement>(null)
   const [activeIndex, setActiveIndex] = useState(0)
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const openImage = openIndex === null ? null : images[openIndex]
+
+  const openLightbox = (index: number) => {
+    setOpenIndex(index)
+    dialogRef.current?.showModal()
+  }
+
+  const closeLightbox = () => dialogRef.current?.close()
 
   useEffect(() => {
     const scroller = scrollerRef.current
     if (!scroller) return
 
     const updateActive = () => {
-      const slides = Array.from(scroller.querySelectorAll<HTMLElement>('.project-card__image'))
+      const slides = Array.from(scroller.querySelectorAll<HTMLElement>('.project-card__slide'))
       if (!slides.length) return
 
       const scrollLeft = scroller.scrollLeft
@@ -46,7 +56,7 @@ export function ProjectGallery({ title, images }: ProjectGalleryProps) {
     const scroller = scrollerRef.current
     if (!scroller) return
 
-    const slides = scroller.querySelectorAll<HTMLElement>('.project-card__image')
+    const slides = scroller.querySelectorAll<HTMLElement>('.project-card__slide')
     const target = slides[index]
     if (!target) return
 
@@ -63,16 +73,48 @@ export function ProjectGallery({ title, images }: ProjectGalleryProps) {
         className="project-card__gallery"
         aria-label={`${title} screenshots`}
       >
-        {images.map((image) => (
-          <img
+        {images.map((image, index) => (
+          <button
             key={image.alt}
-            src={image.src}
-            alt={image.alt}
-            className="project-card__image"
-            loading="lazy"
-          />
+            type="button"
+            className="project-card__slide"
+            aria-label={`Enlarge screenshot: ${image.alt}`}
+            onClick={() => openLightbox(index)}
+          >
+            <img
+              src={image.src}
+              alt=""
+              className="project-card__image"
+              loading="lazy"
+            />
+          </button>
         ))}
       </div>
+
+      <dialog
+        ref={dialogRef}
+        className="lightbox"
+        aria-label={`${title} screenshot`}
+        onClose={() => setOpenIndex(null)}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) closeLightbox()
+        }}
+      >
+        {openImage ? (
+          <figure className="lightbox__figure">
+            <img src={openImage.src} alt={openImage.alt} className="lightbox__image" />
+            <figcaption className="lightbox__caption">{openImage.alt}</figcaption>
+          </figure>
+        ) : null}
+        <button
+          type="button"
+          className="lightbox__close"
+          aria-label="Close screenshot"
+          onClick={closeLightbox}
+        >
+          ×
+        </button>
+      </dialog>
 
       {images.length > 1 ? (
         <>
