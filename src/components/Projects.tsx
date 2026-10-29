@@ -66,11 +66,21 @@ export function Projects() {
                     ))}
                   </ul>
                   <div className="project-card__links">
-                    <a href={project.link} target="_blank" rel="noreferrer">
+                    <a
+                      href={project.link}
+                      className="btn btn--primary btn--sm"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Live site →
                     </a>
                     {project.github ? (
-                      <a href={project.github} target="_blank" rel="noreferrer">
+                      <a
+                        href={project.github}
+                        className="btn btn--ghost btn--sm"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Source code
                       </a>
                     ) : null}
