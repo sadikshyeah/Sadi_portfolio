@@ -36,7 +36,19 @@
       rel="stylesheet"
     />
     <link rel="canonical" href="https://sadikshyeah.github.io/Sadi_portfolio/" />
-    <meta name="theme-color" content="#fdf2f8" />
+    <meta name="theme-color" content="#fdf2f8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1016" media="(prefers-color-scheme: dark)" />
+    <script>
+      // Apply a saved theme before first paint so the page doesn't flash
+      try {
+        const theme = localStorage.getItem('theme')
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.dataset.theme = theme
+        }
+      } catch {
+        // Storage blocked: fall back to the system setting
+      }
+    </script>
     <title>Sadi Parajuli — Software Developer in Helsinki</title>
   </head>
   <body>
